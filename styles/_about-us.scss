@@ -1,0 +1,35 @@
+#about-us {
+  padding: 70px 0 0;
+  width: 800px;
+
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  p {
+    margin: 15px 0;
+    text-align: justify;
+  }
+
+  b {
+    color: $main;
+  }
+
+  li {
+    position: relative;
+    margin: 10px 0;
+    padding-left: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      width: 10px;
+      height: 10px;
+      background-color: $main;
+      border-radius: 50%;
+    }
+  }
+}
